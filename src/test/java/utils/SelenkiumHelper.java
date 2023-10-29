@@ -10,16 +10,19 @@ import org.openqa.selenium.WebElement;
 public class SelenkiumHelper {
 
 	
-	public void selectDropdown(WebDriver driver,  WebElement dropdown, List<WebElement> values, String toBeSelected) throws InterruptedException {
+	public void selectDropdown(WebDriver driver,  WebElement dropdown, String xpath, String toBeSelected) throws InterruptedException {
 		
 		
 		dropdown.click();
 		Thread.sleep(2000);
+		
+		List<WebElement> trafficDropdownValue = driver
+				.findElements(By.xpath(xpath));
 
 		
-		for (WebElement country : values) {
+		for (WebElement country : trafficDropdownValue) {
 
-//			System.out.println(country.getText());  
+			System.out.println(country.getText());  
 			
 			if(country.getText().trim().contains(toBeSelected)) {
 				
