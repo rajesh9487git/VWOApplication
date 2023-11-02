@@ -99,7 +99,17 @@ public class LoginStepDefinition {
 		String xpath1 = "//*[@class='Fx(equal-size-child) Miw(0) Ovy(a) dropdown-list-0']/ul/li";
 
 		seleniumhelper.selectDropdown(driver, trafficDropdown, xpath1, "up to 50k visitors/month");
-
+		Thread.sleep(1000);
+		
+		WebElement industry = driver.findElement(By.xpath("//activator[@id='select-box-activator-1']/vwo-transclude/div"));
+		
+		String xpath2= "//*[@id=\"atomic\"]/body/vwo-transclude[2]/menu-content/div[2]/div/div[2]/div/ul/li";
+		
+		seleniumhelper.selectDropdown(driver, industry, xpath2, "Entertainment");
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//*[@class='grid-container-item section-main Mb(40px) Pos(r)']//*[contains(text(),'Next')]")).click();
+		
 	}
 
 	@Then("he completes email verification")
