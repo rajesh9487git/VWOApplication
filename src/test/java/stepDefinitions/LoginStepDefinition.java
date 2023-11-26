@@ -31,6 +31,8 @@ public class LoginStepDefinition {
 		driver = new ChromeDriver();
 
 		driver.navigate().to("https://app.vwo.com/#/login");
+		
+		
 
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
