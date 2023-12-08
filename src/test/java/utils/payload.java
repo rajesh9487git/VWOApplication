@@ -50,5 +50,20 @@ public class payload {
 				+ "\r\n"
 				+ "}";
 	}
+	
+	public static String login() {
+		
+		
+				
+				
+				String Login= "{\r\n"
+				+ "    \"userEmail\": \"rajesh9487@gmail.com\",\r\n"
+				+ "    \"userPassword\": \"Money4money@\"\r\n"
+				+ "}";
+				
+				return Login;
+		
+		
+	}
 
 }
