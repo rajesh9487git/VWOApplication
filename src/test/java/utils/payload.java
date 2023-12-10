@@ -65,5 +65,20 @@ public class payload {
 		
 		
 	}
+	
+	
+	public static String createOrder(String productID) {
+		
+		String createOrder= "{\r\n"
+				+ "  \"orders\": [\r\n"
+				+ "    {\r\n"
+				+ "      \"country\": \"India\",\r\n"
+				+ "      \"productOrderedId\": \""+productID+"\"\r\n"
+				+ "    }\r\n"
+				+ "  ]\r\n"
+				+ "}";
+		
+		return createOrder;
+	}
 
 }
