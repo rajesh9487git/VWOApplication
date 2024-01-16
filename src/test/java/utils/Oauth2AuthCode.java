@@ -13,7 +13,7 @@ public class Oauth2AuthCode {
 		
 		// "https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email&auth_url=https://accounts.google.com/o/oauth2/v2/auth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https://rahulshettyacademy.com/getCourse.php"
 		
-		String url="https://rahulshettyacademy.com/getCourse.php?code=4%2F0AfJohXn6CYbxnFIEuEHpRlALfxMAvNDjXsxtURklXqCthPhiX4TjpyH7pYaStBRVc3iKKQ&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none";
+		String url="https://rahulshettyacademy.com/getCourse.php?code=4%2F0AfJohXmUKo7ed14IpwgLQXDCrESujNfLbYO822DEeH2XZ_29Xdh2fb2y-NQMXAGSvseeLw&scope=email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none";
 		String partialCode= url.split("code=")[1];
 		
 		String code= partialCode.split("&scope")[0];
